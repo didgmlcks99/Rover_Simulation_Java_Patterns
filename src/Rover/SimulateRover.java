@@ -12,32 +12,22 @@ public class SimulateRover {
 		SecondVisitor action_rover = new SecondVisitor();
 		ThirdVisitor html_rover = new ThirdVisitor();
 		
-//		// first visitor checking the rover
-//		for(int i=0; i < parts.length; i++) {
-//			parts[i].accept(check_rover);
-//		}
-//		
-//		// second visitor responding to check results
-//		for(int i=0; i < parts.length; i++) {
-//			parts[i].accept(action_rover);
-//		}
-//		
+		// first visitor checking the rover
+		System.out.println("The First Visitor for Checking Components");
+		for(int i=0; i < parts.length; i++) {
+			parts[i].accept(check_rover);
+		}
+		
+		// second visitor responding to check results
+		System.out.println("\nThe Second Visitor for Maintaing Components");
+		for(int i=0; i < parts.length; i++) {
+			parts[i].accept(action_rover);
+		}
+		
 //		// third visitor building HTML for simulation
 //		for(int i=0; i < parts.length; i++) {
 //			parts[i].accept(html_rover);
 //		}
-		
-		System.out.println("The First Visitor for Checking Components");
-		parts[0].accept(check_rover);
-		parts[1].accept(check_rover);
-		parts[2].accept(check_rover);
-		parts[3].accept(check_rover);
-		
-		System.out.println("\nThe Second Visitor for Maintaing Components");
-		parts[0].accept(action_rover);
-		parts[1].accept(action_rover);
-		parts[2].accept(action_rover);
-		parts[3].accept(action_rover);
 		
 		// singleton pattern : start blackbox
 		BlackboxSingleton.getInstance().print_results();;

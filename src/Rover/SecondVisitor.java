@@ -100,7 +100,16 @@ public class SecondVisitor implements Visitor{
 
 	@Override
 	public void visit(Camera c) {
-		// TODO Auto-generated method stub
+		
+		System.out.println("\n... Start Working on Camera ...");
+		
+		if(c.past_alarm() == 1) {
+			String act = "Repair Camera";
+			System.out.println("==> Action: " + act);
+			BlackboxSingleton.getInstance().record_action(act);
+		}else {
+			System.out.println("No Action on Camera");
+		}
 		
 	}
 

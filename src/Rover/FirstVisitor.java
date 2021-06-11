@@ -100,7 +100,19 @@ public class FirstVisitor implements Visitor{
 
 	@Override
 	public void visit(Camera c) {
-		// TODO Auto-generated method stub
+		
+		System.out.println("\n... Start Checking Camera ...");
+		System.out.println("Checking Camera");
+		
+		int alarm = generate_rand();
+		if(alarm == 1) {
+			String warn = "Camera Not Working Properly";
+			System.out.println(">>>> Alarm: " + warn);
+			BlackboxSingleton.getInstance().record_alarm(warn);
+		}else {
+			System.out.println("Camera is OK");
+		}
+		c.add_alarm(alarm);
 		
 	}
 	
