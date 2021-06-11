@@ -40,14 +40,39 @@ public class ThirdVisitor implements Visitor{
 
 	@Override
 	public void visit(Motor m) {
-		// TODO Auto-generated method stub
+		String run = "Each Motor Controls Power Consumption";
+		director.running(run);
+		
+		for(int i=0; i < m.motors.length; i++) {
+			ArrayList<String> control = new ArrayList<String>();
+			control.add("Control of " + m.each_motor(i) + " Motor");
+			
+			int state = generate_rand(3);
+			if(state == 0) {
+				control.add("RMP Increased --> Decrease Power to " + m.each_motor(i) + " Motor");
+			}else if(state == 1) {
+				control.add("Constant RMP --> Keep the Same Power to " + m.each_motor(i) + " Motor");
+			}else if(state == 2) {
+				control.add("RMP Decreased --> Increase Power to " + m.each_motor(i) + " Motor");
+			}
+			director.acting(control);
+		}
 		
 	}
 
 	@Override
 	public void visit(SolarPanel s) {
-		// TODO Auto-generated method stub
+		String run = "Solar Panel Generating Electricity";
+		director.running(run);
 		
+		for(int i=0; i < s.panels.length; i++) {
+			ArrayList<String> generate = new ArrayList<String>();
+			generate.add(s.each_panel(i) + " Generating Electricity...");
+			int kw = generate_rand(10) + 10;
+			generate.add("Charging " + kw + "KW");
+			
+			director.acting(generate);
+		}
 	}
 
 	@Override

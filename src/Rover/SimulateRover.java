@@ -32,6 +32,9 @@ public class SimulateRover {
 		System.out.println("\nThe Third Visitor for Rover Movement");
 		html_rover.begin();
 		parts[0].accept(html_rover);
+		parts[1].accept(html_rover);
+		parts[2].accept(html_rover);
+		parts[3].accept(html_rover);
 		html_rover.end();
 		
 		
