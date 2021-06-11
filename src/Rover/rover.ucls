@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="Rover.SecondVisitor" project="Rover_Simulation_Java_Patterns" 
+    file="/Rover_Simulation_Java_Patterns/src/Rover/SecondVisitor.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="127" x="2513" y="108"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="Rover.SolarPanelFlyweight" project="Rover_Simulation_Java_Patterns" 
+    file="/Rover_Simulation_Java_Patterns/src/Rover/SolarPanelFlyweight.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="205" x="2268" y="401"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="Rover.SolarPanel" project="Rover_Simulation_Java_Patterns" 
+    file="/Rover_Simulation_Java_Patterns/src/Rover/SolarPanel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="147" x="680" y="108"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="4" language="java" name="Rover.Visitor" project="Rover_Simulation_Java_Patterns" 
+    file="/Rover_Simulation_Java_Patterns/src/Rover/Visitor.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="127" x="2513" y="401"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="5" language="java" name="Rover.ArmCloned" project="Rover_Simulation_Java_Patterns" 
+    file="/Rover_Simulation_Java_Patterns/src/Rover/ArmCloned.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="152" x="1906" y="108"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="Rover.SolarPanelType" project="Rover_Simulation_Java_Patterns" 
+    file="/Rover_Simulation_Java_Patterns/src/Rover/SolarPanelType.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="119" x="2268" y="612"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="Rover.Motor" project="Rover_Simulation_Java_Patterns" 
+    file="/Rover_Simulation_Java_Patterns/src/Rover/Motor.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="147" x="867" y="108"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="8" language="java" name="Rover.ArmProduct" project="Rover_Simulation_Java_Patterns" 
+    file="/Rover_Simulation_Java_Patterns/src/Rover/ArmProduct.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="152" x="2002" y="401"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="9" language="java" name="Rover.BlackboxSingleton" project="Rover_Simulation_Java_Patterns" 
+    file="/Rover_Simulation_Java_Patterns/src/Rover/BlackboxSingleton.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="243" width="181" x="296" y="108"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="Rover.RobotArm" project="Rover_Simulation_Java_Patterns" 
+    file="/Rover_Simulation_Java_Patterns/src/Rover/RobotArm.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="147" x="1054" y="108"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="Rover.HTMLBuilder" project="Rover_Simulation_Java_Patterns" 
+    file="/Rover_Simulation_Java_Patterns/src/Rover/HTMLBuilder.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="192" x="1736" y="823"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="Rover.Builder" project="Rover_Simulation_Java_Patterns" 
+    file="/Rover_Simulation_Java_Patterns/src/Rover/Builder.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="196" x="1519" y="612"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="Rover.Camera" project="Rover_Simulation_Java_Patterns" 
+    file="/Rover_Simulation_Java_Patterns/src/Rover/Camera.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="121" x="1241" y="108"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="Rover.FirstVisitor" project="Rover_Simulation_Java_Patterns" 
+    file="/Rover_Simulation_Java_Patterns/src/Rover/FirstVisitor.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="127" x="2680" y="108"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="Rover.ThirdVisitor" project="Rover_Simulation_Java_Patterns" 
+    file="/Rover_Simulation_Java_Patterns/src/Rover/ThirdVisitor.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="225" width="130" x="1736" y="108"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="Rover.ArmManager" project="Rover_Simulation_Java_Patterns" 
+    file="/Rover_Simulation_Java_Patterns/src/Rover/ArmManager.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="182" x="2098" y="108"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="Rover.SimulateRover" project="Rover_Simulation_Java_Patterns" 
+    file="/Rover_Simulation_Java_Patterns/src/Rover/SimulateRover.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="107" x="1402" y="108"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="Rover.Main" project="Rover_Simulation_Java_Patterns" 
+    file="/Rover_Simulation_Java_Patterns/src/Rover/Main.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="113" x="527" y="108"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="Rover.Director" project="Rover_Simulation_Java_Patterns" 
+    file="/Rover_Simulation_Java_Patterns/src/Rover/Director.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="171" x="1544" y="401"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="20" language="java" name="Rover.RoverParts" project="Rover_Simulation_Java_Patterns" 
+    file="/Rover_Simulation_Java_Patterns/src/Rover/RoverParts.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="121" x="1133" y="401"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="21" language="java" name="Rover.SolarPanelStock" project="Rover_Simulation_Java_Patterns" 
+    file="/Rover_Simulation_Java_Patterns/src/Rover/SolarPanelStock.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="153" x="2320" y="108"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="Rover.Wheel" project="Rover_Simulation_Java_Patterns" 
+    file="/Rover_Simulation_Java_Patterns/src/Rover/Wheel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="147" x="1549" y="108"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="23">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="24" name="flyweight"/>      
+      <multiplicity id="25" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="26">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="8"/>  
+  </realization>  
+  <association id="27">    
+    <bendpoint x="1745" y="401"/>    
+    <bendpoint x="1745" y="612"/>    
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="28" name="htmlbuilder"/>      
+      <multiplicity id="29" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="30">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="31" name="builder"/>      
+      <multiplicity id="32" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="33">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="34" name="types"/>      
+      <multiplicity id="35" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="36">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="12"/>  
+  </generalization>  
+  <realization id="37">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="20"/>  
+  </realization>  
+  <realization id="38">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <association id="39">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="40" name="showcase"/>      
+      <multiplicity id="41" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="42">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="20"/>  
+  </realization>  
+  <realization id="43">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <realization id="44">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <realization id="45">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="20"/>  
+  </realization>  
+  <association id="46">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="47" name="parts"/>      
+      <multiplicity id="48" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="49">    
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="50" name="director"/>      
+      <multiplicity id="51" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="52">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="20"/>  
+  </realization>  
+  <association id="53">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="54" name="blackbox"/>      
+      <multiplicity id="55" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="56">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="20"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

@@ -5,7 +5,7 @@ public class SimulateRover {
 	// attach each parts to the rover
 	public static RoverParts[] parts = {new Wheel(), new Motor(), new SolarPanel(), new RobotArm(), new Camera()};
 	
-	public static void start() {
+	public static void run() {
 		
 		// create three visitors
 		FirstVisitor check_rover = new FirstVisitor();
