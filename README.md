@@ -5,8 +5,10 @@
 + Top Down Structure
     + Main simply runs the rover simulation. Simulate Rover creates 3 visitors. Uses one black box to record situations.
 <br/>
+
 ![topdown](https://raw.githubusercontent.com/didgmlcks99/Rover_Simulation_Java_Patterns/main/UML_pics/top_down_structure_UML.JPG)
 ![simulator](https://raw.githubusercontent.com/didgmlcks99/Rover_Simulation_Java_Patterns/main/UML_pics/Simulator_Rover.JPG)
+
 <br/><br/>
 + Singleton Pattern
     + Blackbox object is formed as a singleton pattern. Only one object is made and no other object can be made.
