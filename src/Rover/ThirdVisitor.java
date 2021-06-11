@@ -87,15 +87,26 @@ public class ThirdVisitor implements Visitor{
 		}else if(cases == 1) {
 			operation.add(a.each_arm(1) + " in Fine Calibration");
 		}else if(cases == 2) {
-			operation.add("Borth Front and Rear Robot Arms in Fine Calibration");
+			operation.add("Both Front and Rear Robot Arms in Fine Calibration");
 		}
 		director.acting(operation);
 	}
 
 	@Override
 	public void visit(Camera c) {
-		// TODO Auto-generated method stub
+		String run = "Camera in Operation";
+		director.running(run);
 		
+		ArrayList<String> operation = new ArrayList<String>();
+		int cases = generate_rand(3);
+		if(cases == 0) {
+			operation.add("Camera Taking Pictures of 180 degrees View");
+		}else if(cases == 1) {
+			operation.add("Camera Taking Pictures of 270 degrees View");
+		}else if(cases == 2) {
+			operation.add("Camera Taking Pictures of 360 degrees View");
+		}
+		director.acting(operation);
 	}
 	
 	public int generate_rand(int cases) {

@@ -24,21 +24,14 @@ public class SimulateRover {
 			parts[i].accept(action_rover);
 		}
 		
-//		// third visitor building HTML for simulation
-//		for(int i=0; i < parts.length; i++) {
-//			parts[i].accept(html_rover);
-//		}
-		
+		// third visitor building HTML for simulation
 		System.out.println("\nThe Third Visitor for Rover Movement");
 		html_rover.begin();
-		parts[0].accept(html_rover);
-		parts[1].accept(html_rover);
-		parts[2].accept(html_rover);
-		parts[3].accept(html_rover);
+		for(int i=0; i < parts.length; i++) {
+			parts[i].accept(html_rover);
+		}
 		html_rover.end();
-		
-		
-		
+			
 		// singleton pattern : start blackbox
 		BlackboxSingleton.getInstance().print_results();;
 	}

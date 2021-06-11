@@ -26,6 +26,6 @@ public class Director {
 	}
 	
 	public void result() {
-		System.out.println("\n" + builder.getResult() + " is made.");
+		System.out.println(builder.getResult() + " is made.");
 	}
 }
