@@ -1,4 +1,6 @@
 # Rover_Simulation_Java_Patterns
+![bigpic](https://cdn.pixabay.com/photo/2012/11/28/09/08/mars-67522_1280.jpg)
+<br/><br/>
 ## introduction
 ### This program is a simulation for the mars rover. Rover has deferent part (components) attached in which have its own functions and need some help in different environmental situations.Different functions are implemented through various object oriented patterns.
 <br/><br/>
