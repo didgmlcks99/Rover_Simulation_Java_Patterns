@@ -24,7 +24,21 @@ public class SecondVisitor implements Visitor{
 
 	@Override
 	public void visit(Motor m) {
-		// TODO Auto-generated method stub
+		
+		System.out.println();
+		System.out.println("*** Start Working Motor ***");
+		System.out.println();
+
+		for(int i=0; i < m.motors.length; i++) {
+			System.out.println("Acting on " + m.each_motor(i) + " Motor");
+			if(m.past_alarm(i) == 1) {
+				String act = "Supply more power to " + m.each_motor(i) + " Motor";
+				System.out.println("==> Action: " + act);
+				BlackboxSingleton.getInstance().record_action(act);
+			}else {
+				System.out.println("No Action on " + m.each_motor(i) + " Motor");
+			}
+		}
 		
 	}
 

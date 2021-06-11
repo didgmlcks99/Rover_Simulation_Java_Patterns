@@ -29,10 +29,12 @@ public class SimulateRover {
 		
 		System.out.println("The First Visitor for Checking Components");
 		parts[0].accept(check_rover);
+		parts[1].accept(check_rover);
 		System.out.println();
 		
 		System.out.println("The Second Visitor for Maintaing Components");
 		parts[0].accept(action_rover);
+		parts[1].accept(action_rover);
 		
 		// singleton pattern : start blackbox
 		BlackboxSingleton.getInstance().print_results();;
