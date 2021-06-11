@@ -21,7 +21,7 @@ public class ThirdVisitor implements Visitor{
 	}
 
 	@Override
-	public void visit(RobotArm r) {
+	public void visit(RobotArm a) {
 		// TODO Auto-generated method stub
 		
 	}

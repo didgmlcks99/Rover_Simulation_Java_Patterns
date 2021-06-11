@@ -65,8 +65,36 @@ public class FirstVisitor implements Visitor{
 	}
 
 	@Override
-	public void visit(RobotArm r) {
-		// TODO Auto-generated method stub
+	public void visit(RobotArm a) {
+		
+		System.out.println("\n... Start Checking Robot Arm ...");
+		System.out.println("Checking Robot Arm");
+		
+		for(int i=0; i < a.arms.length; i++) {
+			int alarm = generate_rand();
+			a.add_alarm(alarm);
+		}
+		
+		int flag = -1;
+		String warn = "";
+		
+		if(a.past_alarm(0) == 1 && a.past_alarm(1) == 1) {
+			warn = "Both Front and Rear Arms Not Working Properly";
+			flag = 0;
+		}else if(a.past_alarm(0) == 1 && a.past_alarm(1) == 0) {
+			warn = "Front Robot Arm Not Working Properly";
+			flag = 1;
+		}else if(a.past_alarm(0) == 0 && a.past_alarm(1) == 1) {
+			warn = "Rear Robot Arm Not Working Properly";
+			flag = 3;
+		}
+		
+		if(flag == -1) {
+			System.out.println("Robot Arm is OK");
+		}else {
+			System.out.println(".. Alarm: " + warn);
+			BlackboxSingleton.getInstance().record_alarm(warn);
+		}
 		
 	}
 

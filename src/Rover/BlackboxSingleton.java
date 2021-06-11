@@ -6,6 +6,7 @@ public class BlackboxSingleton {
 	private static BlackboxSingleton blackbox = new BlackboxSingleton();
 	private ArrayList<String> alarm = new ArrayList<String>();
 	private ArrayList<String> action = new ArrayList<String>();
+	private int count = 1;
 	
 	private BlackboxSingleton() {
 	}
@@ -35,13 +36,15 @@ public class BlackboxSingleton {
 	
 	public void print_alarm() {
 		for(int i=0; i < alarm.size(); i++) {
-			System.out.println(i + ": Alarm: " + alarm.get(i));
+			System.out.println(count + ": Alarm: " + alarm.get(i));
+			count++;
 		}
 	}
 	
 	public void print_action() {
 		for(int i=0; i < action.size(); i++) {
-			System.out.println(i + ": Action: " + action.get(i));
+			System.out.println(count + ": Action: " + action.get(i));
+			count++;
 		}
 	}
 }

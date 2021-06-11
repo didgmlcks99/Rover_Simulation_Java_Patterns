@@ -65,9 +65,37 @@ public class SecondVisitor implements Visitor{
 	}
 
 	@Override
-	public void visit(RobotArm r) {
-		// TODO Auto-generated method stub
+	public void visit(RobotArm a) {
 		
+		System.out.println("\n... Start Working on Robot Arm ...");
+		
+		ArmManager manager = new ArmManager();
+		ArmCloned frontArm = new ArmCloned("Front Arm Clone");
+		ArmCloned rearArm = new ArmCloned("Rear Arm Clone");
+		
+		manager.register(a.each_arm(0), frontArm);
+		manager.register(a.each_arm(1), rearArm);
+		
+		if(a.past_alarm(0) == 1 && a.past_alarm(1) == 1) {
+			System.out.println("Action on Robot Arm");
+			System.out.println("==> Action: Front and Rear Robot Arms Replaced by Prototype Arm Clones");
+			ArmProduct f_arm = manager.create(a.each_arm(0));
+			f_arm.repairArm(a.each_arm(0));
+			ArmProduct r_arm = manager.create(a.each_arm(1));
+			r_arm.repairArm(a.each_arm(1));
+		}else if(a.past_alarm(0) == 1 && a.past_alarm(1) == 0) {
+			System.out.println("Action on Robot Arm");
+			System.out.println("==> Action: " + a.each_arm(0) + " Replaced by Prototype Front Arm Clone");
+			ArmProduct f_arm = manager.create(a.each_arm(0));
+			f_arm.repairArm(a.each_arm(0));
+		}else if(a.past_alarm(0) == 0 && a.past_alarm(1) == 1) {
+			System.out.println("Action on Robot Arm");
+			System.out.println("==> Action: " + a.each_arm(1) + " Replaced by Prototype Rear Arm Clone");
+			ArmProduct r_arm = manager.create(a.each_arm(1));
+			r_arm.repairArm(a.each_arm(1));
+		}else {
+			System.out.println("No Action on Robot Arm");
+		}
 	}
 
 	@Override
