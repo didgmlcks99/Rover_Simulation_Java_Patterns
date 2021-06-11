@@ -3,7 +3,7 @@
 
 <br/><br/>
 
-## introduction
+## Introduction
 ### This program is a simulation for the mars rover. Rover has deferent part (components) attached in which have its own functions and need some help in different environmental situations.Different functions are implemented through various object oriented patterns.
 
 <br/><br/>
