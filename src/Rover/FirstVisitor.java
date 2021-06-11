@@ -7,9 +7,7 @@ public class FirstVisitor implements Visitor{
 	@Override
 	public void visit(Wheel w) {
 		
-		System.out.println();
-		System.out.println("*** Start Checking Wheel ***");
-		System.out.println();
+		System.out.println("\n*** Start Checking Wheel ***\n");
 		
 		for(int i=0; i < w.wheels.length; i++) {
 			int alarm = generate_rand();
@@ -29,9 +27,7 @@ public class FirstVisitor implements Visitor{
 	@Override
 	public void visit(Motor m) {
 
-		System.out.println();
-		System.out.println("*** Start Checking Motor ***");
-		System.out.println();
+		System.out.println("\n### Start Checking Motor ###\n");
 		
 		for(int i=0; i < m.motors.length; i++) {
 			int alarm = generate_rand();
@@ -50,7 +46,21 @@ public class FirstVisitor implements Visitor{
 
 	@Override
 	public void visit(SolarPanel s) {
-		// TODO Auto-generated method stub
+		
+		System.out.println("\n!!! Start Checking Solar Panel !!!\n");
+		
+		for(int i=0; i < s.panels.length; i++) {
+			int alarm = generate_rand();
+			System.out.println("Checking " + s.each_panel(i));
+			if(alarm == 1) {
+				String warn = "Low Electricity Generated to  " + s.each_panel(i);
+				System.out.println(">>>> Alarm: " + warn);
+				BlackboxSingleton.getInstance().record_alarm(warn);
+			}else {
+				System.out.println("Solar Panel is OK");
+			}
+			s.add_alarm(alarm);
+		}
 		
 	}
 

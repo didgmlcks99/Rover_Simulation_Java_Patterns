@@ -3,7 +3,7 @@ package Rover;
 public class SimulateRover {
 	
 	// attach each parts to the rover
-	public static RoverParts[] parts = {new Wheel(), new Motor(), new RobotArm(), new Camera(), new SolarPanel()};
+	public static RoverParts[] parts = {new Wheel(), new Motor(), new SolarPanel(), new RobotArm(), new Camera()};
 	
 	public static void start() {
 		
@@ -30,11 +30,12 @@ public class SimulateRover {
 		System.out.println("The First Visitor for Checking Components");
 		parts[0].accept(check_rover);
 		parts[1].accept(check_rover);
-		System.out.println();
+		parts[2].accept(check_rover);
 		
-		System.out.println("The Second Visitor for Maintaing Components");
+		System.out.println("\nThe Second Visitor for Maintaing Components");
 		parts[0].accept(action_rover);
 		parts[1].accept(action_rover);
+		parts[2].accept(action_rover);
 		
 		// singleton pattern : start blackbox
 		BlackboxSingleton.getInstance().print_results();;
