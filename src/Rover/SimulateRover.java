@@ -29,6 +29,13 @@ public class SimulateRover {
 //			parts[i].accept(html_rover);
 //		}
 		
+		System.out.println("\nThe Third Visitor for Rover Movement");
+		html_rover.begin();
+		parts[0].accept(html_rover);
+		html_rover.end();
+		
+		
+		
 		// singleton pattern : start blackbox
 		BlackboxSingleton.getInstance().print_results();;
 	}
