@@ -77,8 +77,19 @@ public class ThirdVisitor implements Visitor{
 
 	@Override
 	public void visit(RobotArm a) {
-		// TODO Auto-generated method stub
+		String run = "Robot Arm in Operation";
+		director.running(run);
 		
+		ArrayList<String> operation = new ArrayList<String>();
+		int cases = generate_rand(3);
+		if(cases == 0) {
+			operation.add(a.each_arm(0) + " in Fine Calibration");
+		}else if(cases == 1) {
+			operation.add(a.each_arm(1) + " in Fine Calibration");
+		}else if(cases == 2) {
+			operation.add("Borth Front and Rear Robot Arms in Fine Calibration");
+		}
+		director.acting(operation);
 	}
 
 	@Override
