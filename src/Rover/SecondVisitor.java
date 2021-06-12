@@ -56,6 +56,7 @@ public class SecondVisitor implements Visitor{
 				Random rand = new Random();
 				int kw = ((rand.nextInt(7) + 20) / 2) * 2;
 				
+				// flyweight pattern : request to repair panel 
 				stock.repairPanel(kw, s.each_panel(i));
 			}else {
 				System.out.println("No Action on " + s.each_panel(i));
@@ -73,9 +74,11 @@ public class SecondVisitor implements Visitor{
 		ArmCloned frontArm = new ArmCloned("Front Arm Clone");
 		ArmCloned rearArm = new ArmCloned("Rear Arm Clone");
 		
+		// prototype patter : register each arm through manager
 		manager.register(a.each_arm(0), frontArm);
 		manager.register(a.each_arm(1), rearArm);
 		
+		// clone and repair arm according to results
 		if(a.past_alarm(0) == 1 && a.past_alarm(1) == 1) {
 			System.out.println("Action on Robot Arm");
 			System.out.println("==> Action: Front and Rear Robot Arms Replaced by Prototype Arm Clones");

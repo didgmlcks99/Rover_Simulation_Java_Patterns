@@ -4,6 +4,7 @@ public class SolarPanelStock {
 	private final SolarPanelFlyweight flyweight = new SolarPanelFlyweight();
 	
 	void repairPanel(int kw, String panel) {
+		// bring the panel type
 		SolarPanelType type = flyweight.lookup(kw, panel);
 		
 		String act = "Replacing " + panel;
