@@ -9,8 +9,9 @@
 <br/><br/>
 
 ## User's Manual (compile and run)
-### 1. javac Main.java
-### 2. java Main
+### /src/Rover/Main.java
+#### 1. javac Main.java
+#### 2. java Main
 
 <br/><br/>
 
