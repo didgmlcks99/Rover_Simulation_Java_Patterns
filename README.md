@@ -20,9 +20,11 @@
 
 <br/>
 
+<center>
 ![topdown](https://raw.githubusercontent.com/didgmlcks99/Rover_Simulation_Java_Patterns/main/UML_pics/top_down_structure_UML.JPG)
 ![simulator](https://raw.githubusercontent.com/didgmlcks99/Rover_Simulation_Java_Patterns/main/UML_pics/Simulator_Rover.JPG)
-
+</center>
+    
 <br/><br/>
 
 + Singleton Pattern
